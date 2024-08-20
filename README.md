@@ -1,6 +1,39 @@
 ![](images/honeycomb_sentinel2.png)
 # Microsoft Sentinel SIEM & Honeypot | Live Cyber Attack Dashboard
 
+## Table of Contents
+
+1. [Summary](#summary)
+2. [Learning Objectives](#learning-objectives)
+3. [Tools & Requirements](#tools--requirements)
+4. [Overview](#overview)
+5. [Step-by-Step Guide](#step-by-step-guide)
+   - [Step 1: Create a Microsoft Azure Subscription](#step-1-create-a-microsoft-azure-subscription)
+   - [Step 2: Create a Honeypot Virtual Machine](#step-2-create-a-honeypot-virtual-machine)
+     - [Basics](#basics)
+     - [Project Details](#project-details)
+     - [Instance Details](#instance-details)
+     - [Administrator Account](#administrator-account)
+     - [Inbound Port Rules](#inbound-port-rules)
+     - [Licensing](#licensing)
+     - [Disks](#disks)
+     - [Networking](#networking)
+       - [Network Interface](#network-interface)
+   - [Step 3: Create a Log Analytics Workspace](#step-3-create-a-log-analytics-workspace)
+   - [Step 4: Configure Microsoft Defender for Cloud](#step-4-configure-microsoft-defender-for-cloud)
+     - [Settings | Defender Plans](#settings--defender-plans)
+     - [Settings | Data Collection](#settings--data-collection)
+   - [Step 5: Connect Log Analytics Workspace to Virtual Machine](#step-5-connect-log-analytics-workspace-to-virtual-machine)
+   - [Step 6: Configure Microsoft Sentinel](#step-6-configure-microsoft-sentinel)
+   - [Step 7: Disable the Firewall in Virtual Machine](#step-7-disable-the-firewall-in-virtual-machine)
+   - [Step 8: Scripting the Security Log Exporter](#step-8-scripting-the-security-log-exporter)
+   - [Step 9: Create Custom Log in Log Analytics Workspace](#step-9-create-custom-log-in-log-analytics-workspace)
+   - [Step 10: Query the Custom Log](#step-10-query-the-custom-log)
+   - [Step 11: Extract Fields from Custom Log](#step-11-extract-fields-from-custom-log)
+   - [Step 12: Map Data in Microsoft Sentinel](#step-12-map-data-in-microsoft-sentinel)
+   - [Step 13: Deprovision Resources](#step-13-deprovision-resources)
+
+
 ### Summary
 SIEM (Security Information and Event Management) is an essential solution for organizations aiming to proactively detect, analyze, and respond to security threats. This system collects and correlates event log data across various sources, including firewalls, IDS/IPS, and identity management solutions, enabling security professionals to monitor, prioritize, and address potential threats in real-time.
 
