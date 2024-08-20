@@ -294,3 +294,11 @@ FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, latitud
 ![](images/delete_resource_group.png)
 
 > **Warning:** If resources are not properly deprovisioned, they will consume free credits and may lead to additional charges.
+
+## Conclusion
+
+In this project, we set up a comprehensive SIEM and honeypot environment using Microsoft Sentinel and Azure resources. By configuring and deploying various components such as Virtual Machines, Log Analytics Workspaces, and custom scripts, we were able to capture and analyze security event data. This setup provided real-time insights into cyber threats and attack patterns, enhancing our ability to detect, respond to, and mitigate security incidents.
+
+We demonstrated the importance of integrating SIEM with honeypot environments to gain valuable insights into attacker behaviors and improve overall security posture. The use of Kusto Query Language (KQL) for data queries and visualization further enriched our understanding of the collected data.
+
+Thank you for following along! If you have any questions or feedback, feel free to reach out to me through my [GitHub profile](https://github.com/ShawnTheDefender). Happy securing!
