@@ -1,5 +1,5 @@
 ![](images/honeycomb_sentinel2.png)
-# Azure Sentinel SIEM & Honeypot | Live Cyber Attack Dashboard
+# Microsoft Sentinel SIEM & Honeypot | Live Cyber Attack Dashboard
 
 ### Summary
 SIEM (Security Information and Event Management) is an essential solution for organizations aiming to proactively detect, analyze, and respond to security threats. This system collects and correlates event log data across various sources, including firewalls, IDS/IPS, and identity management solutions, enabling security professionals to monitor, prioritize, and address potential threats in real-time.
